@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbe54120-7a6b-4543-8dab-dfd6adb7bbd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/version/version.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +74,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
+    <MESSAGE value="add Makefile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Makefile" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -90,10 +86,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="381" y="149" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1590493165106" />
-    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1590509994310">
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1590550229188">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590509994310" />
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590550229188" />
     <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1590394538524">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

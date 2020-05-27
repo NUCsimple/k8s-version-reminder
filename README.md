@@ -1,6 +1,7 @@
 # k8s-version-reminder
 
 ### Overview
+![language](https://img.shields.io/badge/language-Go-bule.svg)
 
 Version reminder is a tool that can detect the apiversion of each resource in the kubernetes cluster according to the apiversion of each resource in the configuration file.
 
