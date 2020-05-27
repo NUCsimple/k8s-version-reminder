@@ -1,4 +1,4 @@
-module github.com/AliyunContainerService/reminder
+module github.com/AliyunContainerService/k8s-version-reminder
 
 go 1.13
 

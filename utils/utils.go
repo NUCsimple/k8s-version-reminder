@@ -2,7 +2,7 @@ package utils
 
 import (
 	"encoding/json"
-	"github.com/AliyunContainerService/reminder/config"
+	"github.com/AliyunContainerService/k8s-version-reminder/config"
 	"io/ioutil"
 )
 

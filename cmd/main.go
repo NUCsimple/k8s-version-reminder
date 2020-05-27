@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/AliyunContainerService/reminder/internal"
-	"github.com/AliyunContainerService/reminder/utils"
+	"github.com/AliyunContainerService/k8s-version-reminder/internal"
+	"github.com/AliyunContainerService/k8s-version-reminder/utils"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/client-go/informers"
