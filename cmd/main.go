@@ -18,11 +18,11 @@ var (
 )
 
 func main() {
-	stopper:=make(chan struct{})
+	stopper := make(chan struct{})
 	defer close(stopper)
 	//
 	flag.StringVar(&configPath, "path", "config/version.json", "pls input config path.")
-	flag.StringVar(&kubeconfig,"kubeconfig","","Path to a kube config. Only required if out-of-cluster.")
+	flag.StringVar(&kubeconfig, "kubeconfig", "", "Path to a kube config. Only required if out-of-cluster.")
 	flag.Parse()
 
 	cfg, err := utils.Load(configPath)
@@ -32,12 +32,12 @@ func main() {
 
 	clientset := internal.GetClientsetOrDie(kubeconfig)
 	informerFactory := informers.NewSharedInformerFactory(clientset, 0)
-	deployInformer:=informerFactory.Apps().V1().Deployments()
+	deployInformer := informerFactory.Apps().V1().Deployments()
 	defer runtime.HandleCrash()
 
 	go informerFactory.Start(stopper)
 
-	if !cache.WaitForCacheSync(stopper,deployInformer.Informer().HasSynced){
+	if !cache.WaitForCacheSync(stopper, deployInformer.Informer().HasSynced) {
 		runtime.HandleError(fmt.Errorf("Timed out waiting for caches to sync"))
 		return
 	}
@@ -49,8 +49,8 @@ func main() {
 	}
 
 	for _, deploy := range deployList {
-		if deploy.APIVersion !=cfg.Deployment{
-			fmt.Printf("The deployment %s's ApiVersion is not the %s,pls update quickly.\n",deploy.Name,cfg.Deployment)
+		if deploy.APIVersion != cfg.Deployment {
+			fmt.Printf("The deployment %s's ApiVersion is not the %s,pls update quickly.\n", deploy.Name, cfg.Deployment)
 		}
 	}
 

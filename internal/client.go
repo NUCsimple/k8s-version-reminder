@@ -10,12 +10,12 @@ func GetClientsetOrDie(kubeconfig string) *kubernetes.Clientset {
 	var config *rest.Config
 	var err error
 	// Create the client config. Use kubeconfig if given, otherwise assume in-cluster.
-	if kubeconfig!=""{
+	if kubeconfig != "" {
 		config, err = clientcmd.BuildConfigFromFlags("", kubeconfig)
 		if err != nil {
 			panic(err)
 		}
-	}else {
+	} else {
 		config, err = rest.InClusterConfig()
 		if err != nil {
 			panic(err)
